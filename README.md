@@ -124,7 +124,7 @@ Output:
 
 ---
 
-## 📸 Demo
+## Demo
 
 ![App Screenshot](screenshot1.png)
 ---
