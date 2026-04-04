@@ -1,6 +1,6 @@
 # 📧 Spam Email Classifier (AI Web App)
 
-## 🚀 Overview
+##  Overview
 
 This project is an **AI-powered Spam Email Classifier** that detects whether a message is **Spam or Not Spam** using Natural Language Processing (NLP).
 
@@ -12,16 +12,16 @@ It is built using:
 
 ---
 
-## 🎯 Features
+##  Features
 
-* Classifies messages as **Spam 🚨** or **Not Spam ✅**
+* Classifies messages as **Spam ** or **Not Spam **
 * Displays **confidence score**
 * Handles real-time user input
 * Clean and simple web interface
 
 ---
 
-## 🧠 How It Works
+##  How It Works
 
 1. **Text Preprocessing**
 
@@ -43,7 +43,7 @@ It is built using:
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 * Python
 * scikit-learn
@@ -53,7 +53,7 @@ It is built using:
 
 ---
 
-## 📊 Model Performance
+##  Model Performance
 
 | Metric           | Value                |
 | ---------------- | -------------------- |
@@ -63,7 +63,7 @@ It is built using:
 
 ---
 
-## ⚙️ Installation & Setup
+##  Installation & Setup
 
 1. Clone the repository:
 
@@ -86,7 +86,7 @@ streamlit run app.py
 
 ---
 
-## 💻 Usage
+##  Usage
 
 1. Enter a message in the text box
 2. Click **Check Message**
@@ -94,7 +94,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 spam-classifier-app/
@@ -108,7 +108,7 @@ spam-classifier-app/
 
 ---
 
-## 🔥 Example
+##  Example
 
 Input:
 
@@ -119,12 +119,12 @@ Win money now!!! Free offer!!!
 Output:
 
 ```
-🚨 Spam Message (Confidence: 0.23)
+ Spam Message (Confidence: 0.23)
 ```
 
 ---
 
-## 📌 Future Improvements
+##  Future Improvements
 
 * Use deep learning (LSTM / Transformers)
 * Improve preprocessing (stemming, lemmatization)
