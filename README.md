@@ -68,7 +68,7 @@ It is built using:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/spam-classifier-app.git
+git clone https://github.com/amshumanshetty/spam-classifier-app.git
 cd spam-classifier-app
 ```
 
