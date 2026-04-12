@@ -138,9 +138,9 @@ Output:
 
 ## Demo
 
-![App Screenshot](screenshots/app-demo1.png)
+![App Screenshot](screenshot/app-demo1.png)
 ---
-![App Screenshot](screenshots/app-demo2.png)
+![App Screenshot](screenshot/app-demo2.png)
 
 ---
 
