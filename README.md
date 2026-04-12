@@ -7,7 +7,7 @@ This project is an **AI-powered Spam Email Classifier** that detects whether a m
 It is built using:
 
 * TF-IDF for text feature extraction
-* Naive Bayes for classification
+* Logistic Regression for classification
 * Streamlit for an interactive web interface
 
 ---
@@ -15,7 +15,6 @@ It is built using:
 ##  Features
 
 * Classifies messages as **Spam ** or **Not Spam **
-* Displays **confidence score**
 * Handles real-time user input
 * Clean and simple web interface
 
@@ -35,7 +34,7 @@ It is built using:
 
 3. **Model Training**
 
-   * Trained using **Multinomial Naive Bayes**
+   * Trained using **Logistic Regression**
 
 4. **Prediction**
 
@@ -99,11 +98,24 @@ streamlit run app.py
 ```
 spam-classifier-app/
 │
-├── app.py              # Streamlit app
-├── model.pkl           # Trained Naive Bayes model
-├── vectorizer.pkl      # TF-IDF vectorizer
-├── requirements.txt
-└── README.md
+├── app/
+│   ├── main.py
+│   └── predict.py
+│
+├── model/
+│   ├── train.py
+│   ├── model.pkl
+│   └── vectorizer.pkl
+│
+├── data/
+│   └── spam.csv
+│
+├── screenshots/
+│   └── app-demo.png
+│
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ---
@@ -126,9 +138,9 @@ Output:
 
 ## Demo
 
-![App Screenshot](screenshot1.png)
+![App Screenshot](screenshots/app-demo1.png)
 ---
-![App Screenshot](screenshot2.png)
+![App Screenshot](screenshots/app-demo2.png)
 
 ---
 
