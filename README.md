@@ -1,101 +1,32 @@
-# 📧 Spam Email Classifier (AI Web App)
+# Spam Classifier App
 
-##  Overview
-
-This project is an **AI-powered Spam Email Classifier** that detects whether a message is **Spam or Not Spam** using Natural Language Processing (NLP).
-
-It is built using:
-
-* TF-IDF for text feature extraction
-* Logistic Regression for classification
-* Streamlit for an interactive web interface
+A machine learning web application that classifies SMS/text messages as **Spam** or **Not Spam** using TF-IDF vectorization and Logistic Regression.
 
 ---
 
-##  Features
+## Features
 
-* Classifies messages as **Spam ** or **Not Spam **
-* Handles real-time user input
-* Clean and simple web interface
-
----
-
-##  How It Works
-
-1. **Text Preprocessing**
-
-   * Converts text to lowercase
-   * Removes special characters
-   * Removes stopwords
-
-2. **Feature Extraction**
-
-   * Uses TF-IDF to convert text → numerical vectors
-
-3. **Model Training**
-
-   * Trained using **Logistic Regression**
-
-4. **Prediction**
-
-   * Uses probability threshold to classify messages
+* Spam detection for user-entered text messages
+* Probability/confidence score for predictions
+* Interactive web interface built with Streamlit
+* Modular project structure for training, inference, and UI
+* Saved trained model for fast predictions
 
 ---
 
-##  Tech Stack
+## Tech Stack
 
 * Python
-* scikit-learn
-* pandas
-* NumPy
+* Scikit-learn
 * Streamlit
+* Pandas
+* Joblib
 
 ---
 
-##  Model Performance
-
-| Metric           | Value                |
-| ---------------- | -------------------- |
-| Accuracy         | ~97%                 |
-| Precision (Spam) | High                 |
-| Recall (Spam)    | Improved with tuning |
-
----
-
-##  Installation & Setup
-
-1. Clone the repository:
+## Project Structure
 
 ```bash
-git clone https://github.com/amshumanshetty/spam-classifier-app.git
-cd spam-classifier-app
-```
-
-2. Install dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-3. Run the app:
-
-```bash
-streamlit run app.py
-```
-
----
-
-##  Usage
-
-1. Enter a message in the text box
-2. Click **Check Message**
-3. View prediction and confidence score
-
----
-
-##  Project Structure
-
-```
 spam-classifier-app/
 │
 ├── app/
@@ -120,35 +51,42 @@ spam-classifier-app/
 
 ---
 
-##  Example
+## Model Pipeline
 
-Input:
+1. Load SMS spam dataset
+2. Preprocess text data
+3. Convert text to numerical vectors using TF-IDF
+4. Train Logistic Regression classifier
+5. Save trained model and vectorizer
+6. Use Streamlit app for real-time predictions
 
-```
-Win money now!!! Free offer!!!
-```
+---
 
-Output:
+## Installation
 
-```
- Spam Message (Confidence: 0.23)
+```bash
+git clone https://github.com/amshumanshetty/spam-classifier-app.git
+cd spam-classifier-app
+pip install -r requirements.txt
 ```
 
 ---
 
-## Demo
+## Run Locally
 
-![App Screenshot](screenshot/app-demo1.png)
----
-![App Screenshot](screenshot/app-demo2.png)
-
----
-
-##  Future Improvements
-
-* Use deep learning (LSTM / Transformers)
-* Improve preprocessing (stemming, lemmatization)
-* Add more training data
-* Deploy with custom domain
+```bash
+streamlit run app/main.py
+```
 
 ---
+
+## Example Predictions
+
+| Input Message            | Prediction |
+| ------------------------ | ---------- |
+| "WIN FREE MONEY NOW!!!"  | Spam       |
+| "Hey bro where are you?" | Not Spam   |
+
+---
+
+
